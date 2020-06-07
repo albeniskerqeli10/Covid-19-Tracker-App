@@ -68,7 +68,7 @@ flex-direction: row;
 /* Homepage Design*/ 
 .homepage {
 width: 100%;
-min-height: 50vh;
+min-height: 80vh;
 align-items: center;
 display: flex;
 flex-direction: row;
