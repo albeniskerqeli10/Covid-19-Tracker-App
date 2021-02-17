@@ -5,8 +5,8 @@ body {
 }
 
 :root {
-	--blue:#2962FF;
-	--white:#2962FF;
+	--blue:#344ffe;
+	--white:white;
 	--black:#000;
 		--lightblue : #EBF4FF;
 		--lights:#f1f5f8;
@@ -14,19 +14,36 @@ body {
 --theme :blue;
 
 }
-.bUjnei {
-	background-color: transparent!important;
-	color: white;
+
+.display-4 {
+	padding:10px 0;
 }
 
-.dvHkQe {
+#toggle {
+	font-size: 40px;
 	color: black;
+	font-weight: bold;
 }
+
+.navbar-toggler-icon {
+	display: flex;
+	align-items: center;
+	justify-content:center;
+}
+.navbar-toggler:focus {
+	outline: none;
+	border: none;
+	box-shadow:none;
+}
+
 
 /* Navbar Designing */ 
 .navbar {
 	background-color: transparent;
 	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	min-height: 100px;
 }
 
@@ -46,9 +63,10 @@ body {
 }
 .nav-link {
 	color: black;
-	font-weight: normal;
+	font-weight: 500;
 	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
+
+	font-family:  'Raleway', sans-serif;
 
 
 }
@@ -319,55 +337,36 @@ color: lightgray;
 
 /* Stats Design*/ 
 
+#total {
+	padding: 50px 0;
+}
 .stats {
 	width: 100%;
-	min-height: 500px;
+	min-height: 700px;
 	display: flex;
 	align-items: center;
+	padding: 50px 0;
 	justify-content: center;
+	text-align: center;
 	flex-direction: column;
 	background: var(--lightblue);
 
 }
 
-
-/* Covid-19 Widget Design*/ 
-
-.elfsight-app-d3df42b4-bd1d-47d0-9741-18d94f55c037  {
-width:100%!important;
-min-height: 600px;
-
-padding: 20px 0;
+.stats__box {
+	width: 100%;
+	margin: 20px 10px;
+	min-height: 100px;
+	padding: 30px 0!important;
+	display:flex;
+	background-color: var(--blue);
+	color: white;
+	align-items:center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 
-
-.eUEpGU {
-	color: var(--blue);
-	font-weight: bold;
-	padding: 30px 0;
-
-
-}
-
-.ddvFgM {
-	color: black!important;
-
-}
-
-.kZhlts {
-	margin:15px 10px !important;
-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-
-}
-
-
-.fDvpUd {
-color: black;
-font-weight: bold!important;
-opacity: 1!important;
-
-}
 
 
 /* Contact  Design*/ 
@@ -379,11 +378,11 @@ opacity: 1!important;
 	justify-content: center;
 	flex-direction: column;
 	opacity: 1;
-background-attachment: fixed;
+	background-attachment: fixed;
     background-image:  linear-gradient(
           rgba(0, 0, 0, 0.5), 
           rgba(0, 0, 0, 0.5)
-        ), url(images/pexels.jpg);
+        ), url(https://images.unsplash.com/photo-1611689102192-1f6e0e52df0a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1105&q=80);
     background-position: center;
 background-size: cover;
 
@@ -528,6 +527,7 @@ justify-content: center;
 	width: 100%;
 	min-height: 70px;
 	background-color: var(--blue);
+	flex-wrap: wrap;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -537,4 +537,13 @@ justify-content: center;
 .footersecond h2 {
 	color: white;
 	font-size: 15px;
+}
+
+.footerbox{
+	width:100%;
+	min-height: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
 }
